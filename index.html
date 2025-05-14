@@ -12,10 +12,13 @@
     <div class="container" >
         <!-- The Left SideBar -->
         <div class="sidebar">
+            <div class="bio">
             <img src="avatar.png" alt="logo" class="logo">
-            <h1 class="text-2xl font-semibold mt-5">Abhik Mahajan</h1> 
+            <div class="">
+            <h1 class="text-2xl font-semibold mt-5">Abhik Mahajan</h1>
+             
             <p class="text-sm border p-1 rounded bg-gray-800 mt-5">Web Developer</p>
-           
+                </div></div>
             <hr class="w-full border-gray-700 mt-5">
 
             <!-- The Menu Items -->
@@ -54,7 +57,7 @@
                 </div>
             </div>
             <!-- Social Media Icons -->
-            <div class="social-media flex justify-center items-center gap-4 mb-6 mt-14" >
+            <div class="social-media" >
                <a href="https://www.instagram.com/abhik_mahajan/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://github.com/abhikmahajan" target="_blank"> <i class="fab fa-github"></i></a>
                 <a href="https://x.com/abhikmahajan01" target="_blank"> <i class="fab fa-twitter"></i></a>
@@ -66,11 +69,11 @@
     <!-- The Main Section -->
     <div class="main">
         <nav class="navigation">
-            <ul class="flex items-center gap-10 justify-end float-right bg-gray-800">
+            <ul class="nav-items">
                 <li><button onclick="switchPage('about')" id="aboutBtn" class="text-white font-semibold hover:text-yellow-500">About</button></li>
                 <li><button onclick="switchPage('resume')" id="resumeBtn" class="text-white font-semibold hover:text-yellow-500">Resume</button></li>
                 <li><button onclick="switchPage('portfolio')" id="portfolioBtn" class="text-white font-semibold hover:text-yellow-500">Portfolio</button></li>
-                <li><button onclick="switchPage('blog')" id="blogBtn" class="text-white font-semibold hover:text-yellow-500">Blog</button></li>
+                <li><button onclick="switchPage('mindspace')" id="mindspaceBtn" class="text-white font-semibold hover:text-yellow-500">Mindspace</button></li>
                 <li><button onclick="switchPage('contact')" id="contactBtn" class="text-white font-semibold hover:text-yellow-500">Contact</button></li>
             </ul>
         </nav>
@@ -209,17 +212,17 @@
                 <!-- Image Cards 1 2 3 -->
                 <div class="flex justify-center items-center gap-5 mt-10">
                     <div class="portfolio-item flex-1 justify-center items-center">
-                        <img src="weather.png" alt="Portfolio 1" onclick="window.open('https://abhikmahajan.github.io/WeatherApp/', '_blank')" class="border-2 border-gray-700 drop-shadow-2xl backdrop-blur rounded-lg p-5 h-100 w-100 hover:scale-110 transition-all duration-300 hover:border-yellow-500 hover:cursor-pointer">
+                        <img src="images/weather.png" alt="Portfolio 1" onclick="window.open('https://abhikmahajan.github.io/WeatherApp/', '_blank')" class="border-2 border-gray-700 drop-shadow-2xl backdrop-blur rounded-lg p-5 h-100 w-100 hover:scale-110 transition-all duration-300 hover:border-yellow-500 hover:cursor-pointer">
                         <h3 class="font-semibold mt-2">Weather App</h3>
                         <p class="text-gray-400 mt-1 text-sm">Responsive weather app using API to fetch real-time weather data.</p>
                     </div>
                     <div class="portfolio-item flex-1 justify-center items-center">
-                        <img src="amazon.png" alt="Portfolio 1" onclick="window.open('https://abhikmahajan.github.io/Amazon-Clone/', '_blank')" class="border-2 border-gray-700 drop-shadow-2xl backdrop-blur rounded-lg p-5 h-100 w-100 hover:scale-110 transition-all duration-300 hover:border-yellow-500 hover:cursor-pointer">
+                        <img src="images/amazon.png" alt="Portfolio 1" onclick="window.open('https://abhikmahajan.github.io/Amazon-Clone/', '_blank')" class="border-2 border-gray-700 drop-shadow-2xl backdrop-blur rounded-lg p-5 h-100 w-100 hover:scale-110 transition-all duration-300 hover:border-yellow-500 hover:cursor-pointer">
                         <h3 class="font-semibold mt-2">Amazon Clone</h3>
                         <p class="text-gray-400 mt-1 text-sm">This is an exact clone of the homepage of the Amazon E-commerce website.</p>
                     </div>
                     <div class="portfolio-item flex-1 justify-center items-center">
-                        <img src="food.png" alt="Portfolio 1" onclick="window.open('https://harshit-077.github.io/CSE326-Project/', '_blank')" class="border-2 border-gray-700 drop-shadow-2xl backdrop-blur rounded-lg p-5 h-100 w-100 hover:scale-110 transition-all duration-300 hover:border-yellow-500 hover:cursor-pointer">
+                        <img src="images/food.png" alt="Portfolio 1" onclick="window.open('https://harshit-077.github.io/CSE326-Project/', '_blank')" class="border-2 border-gray-700 drop-shadow-2xl backdrop-blur rounded-lg p-5 h-100 w-100 hover:scale-110 transition-all duration-300 hover:border-yellow-500 hover:cursor-pointer">
                         <h3 class="font-semibold mt-2">Food Ordering App</h3>
                         <p class="text-gray-400 mt-1 text-sm">This is a Food Ordering App with a beautiful design and responsive.</p>
                     </div>
@@ -229,17 +232,17 @@
                 <div class="flex justify-center items-center gap-5 mt-10">
 
                     <div class="portfolio-item flex-1 justify-center items-center">
-                        <img src="calculator.png" alt="Portfolio 1" onclick="window.open('https://abhikmahajan.github.io/Calculator/', '_blank')" class="border-2 border-gray-700 drop-shadow-2xl backdrop-blur rounded-lg p-5 h-100 w-100 hover:scale-110 transition-all duration-300 hover:border-yellow-500 hover:cursor-pointer">
+                        <img src="images/calculator.png" alt="Portfolio 1" onclick="window.open('https://abhikmahajan.github.io/Calculator/', '_blank')" class="border-2 border-gray-700 drop-shadow-2xl backdrop-blur rounded-lg p-5 h-100 w-100 hover:scale-110 transition-all duration-300 hover:border-yellow-500 hover:cursor-pointer">
                         <h3 class="font-semibold mt-2">Calculator</h3>
                         <p class="text-gray-400 mt-1 text-sm">A simple and responsive calculator built for basic arithmetic operations.</p>
                     </div>
                     <div class="portfolio-item flex-1 justify-center items-center">
-                        <img src="image.png" alt="Portfolio 1" onclick="window.open('https://abhikmahajan.github.io/KickTheCat/', '_blank')" class="border-2 border-gray-700 drop-shadow-2xl backdrop-blur rounded-lg p-5 h-100 w-100 hover:scale-110 transition-all duration-300 hover:border-yellow-500 hover:cursor-pointer">
+                        <img src="images/image.png" alt="Portfolio 1" onclick="window.open('https://abhikmahajan.github.io/KickTheCat/', '_blank')" class="border-2 border-gray-700 drop-shadow-2xl backdrop-blur rounded-lg p-5 h-100 w-100 hover:scale-110 transition-all duration-300 hover:border-yellow-500 hover:cursor-pointer">
                         <h3 class="font-semibold mt-2">Kick The Cat</h3>
                         <p class="text-gray-400 mt-1 text-sm">I just made an interactive game which is fun to play.</p>
                     </div>
                     <div class="portfolio-item flex-1 justify-center items-center">
-                        <img src="rockpaper.png" alt="Portfolio 1" onclick="window.open('https://abhikmahajan.github.io/RockPaperScissors/', '_blank')" class="border-2 border-gray-700 drop-shadow-2xl backdrop-blur rounded-lg p-5 h-100 w-100 hover:scale-110 transition-all duration-300 hover:border-yellow-500 hover:cursor-pointer">
+                        <img src="images/rockpaper.png" alt="Portfolio 1" onclick="window.open('https://abhikmahajan.github.io/RockPaperScissors/', '_blank')" class="border-2 border-gray-700 drop-shadow-2xl backdrop-blur rounded-lg p-5 h-100 w-100 hover:scale-110 transition-all duration-300 hover:border-yellow-500 hover:cursor-pointer">
                         <h3 class="font-semibold mt-2">Rock Paper Scissors</h3>
                         <p class="text-gray-400 mt-1 text-sm">This is a Rock-Paper-Scissors game with score counter beautifully designed.</p>
                     </div>
@@ -247,9 +250,9 @@
                 
             </div>
 
-            <!-- The Blog Page -->
-            <div id="blogPage" class="page hidden">
-                <h1 class="text-3xl font-bold">Blog</h1>
+            <!-- The Mindspace Page -->
+            <div id="mindspacePage" class="page hidden">
+                <h1 class="text-3xl font-bold">Mindspace</h1>
                 <hr class="mt-5 border-gray-700">
                 
                 <div class="blog-post">
