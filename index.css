@@ -260,5 +260,9 @@ body{
         display:flex;
         flex-direction: column;
     }
+
+    .navigation{
+        position: sticky;
+    }
 }
 
