@@ -204,8 +204,8 @@ body{
 
     .container{
         display:block;
-        
-        padding-right: 0;
+        padding-left: 2%;
+        padding-right: 2%;
         margin:0;
     }
 
