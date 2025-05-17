@@ -2,6 +2,8 @@ body{
     background-color: hsla(0, 0%, 0%, 0.886);
     width: screen;
     height: screen;
+    display: flex;
+    justify-content: center;
 }
 
 .logo{
@@ -14,9 +16,11 @@ body{
 .container{
     color:white;
     display: flex;
+    justify-content: center;
     gap: 30px;
     padding-left: 30px;
     padding-right: 30px;
+    margin-right:0;
     padding-top: 10px;
     margin-bottom: 10px;
 }
@@ -115,7 +119,11 @@ body{
 
 
 
+@media screen and (max-width: 768px) {
 
+
+    
+}
 
 
   
