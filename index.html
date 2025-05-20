@@ -9,7 +9,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="container" >
+    <!-- The intro -->
+    <div id="intro-animation" class="fade-in">
+    <h1 class="text-5xl mb-4 text-yellow-500">Abhik Mahajan</h1>
+    <h1 >Welcome to My Portfolio</h1>
+  </div>
+    <div class="container" id="container">
         <!-- The Left SideBar -->
         <div class="sidebar">
             <div class="bio">
@@ -256,10 +261,30 @@
                 <hr class="mt-5 border-gray-700">
                 
                 <div class="blog-post">
-                    <div class="blog-post-content mt-10">
-                        <h2 class="text-2xl font-bold">Sorry But I haven't written any blog yet.</h2>
-                        <p class="text-gray-400 mt-2">I will write some blogs soon and share my knowledge with you.</p>
-                    </div>
+                    
+  <article style="margin-bottom: 2rem;">
+    <h3 style="font-size: 1.5rem;" class="text-yellow-500 mt-8">🎨 My Favorite HTML/CSS Tricks Every Beginner Should Know</h3>
+    <p style="font-size: 1rem; line-height: 1.6;" class="text-white mt-5 mb-3">
+      When I started learning web development, HTML and CSS seemed basic — just structure and styling. But with every project I made, I picked up small tricks that made a big difference. Here are my personal favorite HTML/CSS tricks that every beginner should know:
+    </p>
+
+    <ul style="list-style: square; padding-left: 1.5rem;" class="text-gray-400">
+      <li><strong>Use <code>rem</code> instead of <code>px</code></strong> for better responsive design.</li>
+      <li><strong>Flexbox centering:</strong> Easily center elements vertically and horizontally.</li>
+      <li><strong><code>target="_blank"</code>:</strong> Open links in new tabs safely.</li>
+      <li><strong>Hover effects:</strong> Use <code>transform</code> and <code>transition</code> to add interactivity.</li>
+      <li><strong>Make perfect circles:</strong> With <code>border-radius: 50%</code>.</li>
+      <li><strong>Gradient backgrounds:</strong> Upgrade your site’s vibe with <code>linear-gradient</code>.</li>
+      <li><strong>Mobile-first media queries:</strong> Make your site responsive properly.</li>
+      <li><strong>Semantic HTML:</strong> Use tags like <code>&lt;section&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code>.</li>
+      <li><strong>Lazy loading images:</strong> Add <code>loading="lazy"</code> for performance.</li>
+      <li><strong>Custom cursors:</strong> Add a cool UX detail with <code>cursor</code> property.</li>
+    </ul>
+
+    <p style="margin-top: 1rem; font-style: italic;" class="text-gray-400">
+      These tricks helped me build better projects and cleaner websites — from my food ordering site to my weather app. Hope they help you too!
+    </p>
+  </article>
                 </div>
                 
 
