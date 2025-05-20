@@ -15,3 +15,11 @@ function switchPage(pageName) {
     });
     document.getElementById(pageName + 'Btn').classList.add('text-yellow-500');
 }
+
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('intro-animation').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+  }, 3000); 
+});
