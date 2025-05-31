@@ -75,11 +75,11 @@
     <div class="main">
         <nav class="navigation">
             <ul class="nav-items">
-                <li><button onclick="switchPage('about')" id="aboutBtn" class="text-white font-semibold hover:text-yellow-500">About</button></li>
-                <li><button onclick="switchPage('resume')" id="resumeBtn" class="text-white font-semibold hover:text-yellow-500">Resume</button></li>
-                <li><button onclick="switchPage('portfolio')" id="portfolioBtn" class="text-white font-semibold hover:text-yellow-500">Portfolio</button></li>
-                <li><button onclick="switchPage('mindspace')" id="mindspaceBtn" class="text-white font-semibold hover:text-yellow-500">Mindspace</button></li>
-                <li><button onclick="switchPage('contact')" id="contactBtn" class="text-white font-semibold hover:text-yellow-500">Contact</button></li>
+                <li><button onclick="switchPage('about')" id="aboutBtn" class="text-white font-semibold hover:text-yellow-500 flex-1">About</button></li>
+                <li><button onclick="switchPage('resume')" id="resumeBtn" class="text-white font-semibold hover:text-yellow-500 flex-1">Resume</button></li>
+                <li><button onclick="switchPage('portfolio')" id="portfolioBtn" class="text-white font-semibold hover:text-yellow-500 flex-1">Portfolio</button></li>
+                <li><button onclick="switchPage('experience')" id="experienceBtn" class="text-white font-semibold hover:text-yellow-500 flex-1">Experience</button></li>
+                <li><button onclick="switchPage('contact')" id="contactBtn" class="text-white font-semibold hover:text-yellow-500 flex-1">Contact</button></li>
             </ul>
         </nav>
         <div class="main-content">
@@ -161,7 +161,7 @@
                     <div class="ml-12 space-y-8">
                         <div>
                             <h3 class="text-xl">Frontend and Web Development </h3>
-                            <p class="text-gray-400 mt-2">HTML5, CSS3, JavaScript, Bootstrap, Tailwind CSS, WordPress</p>
+                            <p class="text-gray-400 mt-2">HTML5, CSS3, JavaScript, Bootstrap, Tailwind CSS, React</p>
                         </div>
                         
                         <div>
@@ -195,11 +195,7 @@
                                 <p class="text-gray-400 mt-1">Bachelor of Technology in Computer Science and Engineering</p>
                             </div>
                             
-                            <div>
-                                <h3 class="text-xl">Shiv Jyoti Public School, Jalandhar (Punjab) </h3>
-                                <p class="text-yellow-500 mt-1">2021-2023</p>
-                                <p class="text-gray-400 mt-1">Senior Secondary (12th)</p>
-                            </div>
+                            
                             
                         </div>
                     </div>
@@ -255,38 +251,37 @@
                 
             </div>
 
-            <!-- The Mindspace Page -->
-            <div id="mindspacePage" class="page hidden">
-                <h1 class="text-3xl font-bold">Mindspace</h1>
+            <!-- The Experience Page -->
+            <div id="experiencePage" class="page hidden">
+                <h1 class="text-3xl font-bold">Experience</h1>
                 <hr class="mt-5 border-gray-700">
                 
-                <div class="blog-post">
-                    
-  <article style="margin-bottom: 2rem;">
-    <h3 style="font-size: 1.5rem;" class="text-yellow-500 mt-8">🎨 My Favorite HTML/CSS Tricks Every Beginner Should Know</h3>
-    <p style="font-size: 1rem; line-height: 1.6;" class="text-white mt-5 mb-3">
-      When I started learning web development, HTML and CSS seemed basic — just structure and styling. But with every project I made, I picked up small tricks that made a big difference. Here are my personal favorite HTML/CSS tricks that every beginner should know:
-    </p>
-
-    <ul style="list-style: square; padding-left: 1.5rem;" class="text-gray-400">
-      <li><strong>Use <code>rem</code> instead of <code>px</code></strong> for better responsive design.</li>
-      <li><strong>Flexbox centering:</strong> Easily center elements vertically and horizontally.</li>
-      <li><strong><code>target="_blank"</code>:</strong> Open links in new tabs safely.</li>
-      <li><strong>Hover effects:</strong> Use <code>transform</code> and <code>transition</code> to add interactivity.</li>
-      <li><strong>Make perfect circles:</strong> With <code>border-radius: 50%</code>.</li>
-      <li><strong>Gradient backgrounds:</strong> Upgrade your site’s vibe with <code>linear-gradient</code>.</li>
-      <li><strong>Mobile-first media queries:</strong> Make your site responsive properly.</li>
-      <li><strong>Semantic HTML:</strong> Use tags like <code>&lt;section&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code>.</li>
-      <li><strong>Lazy loading images:</strong> Add <code>loading="lazy"</code> for performance.</li>
-      <li><strong>Custom cursors:</strong> Add a cool UX detail with <code>cursor</code> property.</li>
-    </ul>
-
-    <p style="margin-top: 1rem; font-style: italic;" class="text-gray-400">
-      These tricks helped me build better projects and cleaner websites — from my food ordering site to my weather app. Hope they help you too!
-    </p>
-  </article>
+                <div class="mt-5">
+                    <p>I started my frontend development journey with a passion for design and interactivity, learning HTML, CSS, and JavaScript before diving into frameworks like React and Next.js. I’ve built responsive web apps and interfaces, constantly improving through real-world practice.</p>
+                    <p class="mt-4">Hackathons have been a major part of my growth. These experiences taught me rapid prototyping, team collaboration, and agile development.
+                    Beyond hackathons, I’ve contributed to open-source projects, explored UI/UX design, and stayed curious—always building, learning, and iterating.</p>
                 </div>
-                
+                <div>
+                <div class="flex mt-8 items-center">
+                    <i class="fas fa-code text-yellow-500 border-2 border-gray-700 rounded shadow-black shadow-2xl p-2"></i>
+                    <h1 class="text-2xl font-bold ml-3">Internships</h1>
+                </div>
+                <div class="relative mt-5">
+                    <!-- Vertical line -->
+                    <div class="absolute left-[21px] top-0 w-0.5 h-full bg-gray-700"></div>
+                    
+                    <!-- Content -->
+                    <div class="ml-12 space-y-8">
+                        <div>
+                            <h2 class="text-2xl">SDE Intern<span class="text-lg ml-4 text-gray-400 ">June-July,2025</span></h2>
+                            <h3 class= "text-xl text-yellow-500 mt-1">Bluestock Fintech, Pune</h3>
+                            <p class="mt-2"> During my internship at Bluestock Fintech, I worked closely with the development team to build and enhance user-facing features using React and Tailwind CSS. I contributed to improving the platform’s UI, optimized component performance, and ensured responsive design across devices. The experience deepened my understanding of frontend best practices in a real-world fintech environment and strengthened my ability to work in a fast-paced, collaborative setting.</p>
+                            <p class="text-gray-400 mt-2">HTML5, CSS3, JavaScript, Bootstrap, Tailwind CSS, ReactJs</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                </div>
 
             </div>
 
