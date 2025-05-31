@@ -48,8 +48,7 @@ body{
   display: flex;
   align-items: center;
   gap: 2.5rem;
-  justify-content: flex-end;
-  float: right;
+  justify-content: space-around;
   background-color: #1f2937;
 }
 
@@ -71,7 +70,7 @@ body{
     background-color:rgb(31, 41, 55);
     right: 0;
     top: 0;
-    float: right;   
+       
     
     padding: 20px;
     border-top-right-radius: 20px;
@@ -176,7 +175,6 @@ body{
     }
 
     .main-content {
-        margin-top:80px;
         padding: 0 15px;
     }
 
@@ -234,7 +232,6 @@ body{
     }
 
     .main-content {
-        margin-top:80px;
         padding: 0 15px;
     }
 
