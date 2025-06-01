@@ -23,3 +23,21 @@ window.addEventListener('load', () => {
     document.getElementById('main-content').style.display = 'block';
   }, 3000); 
 });
+
+
+(function(){
+    emailjs.init("3R4hJweBGZJUUCmov"); // replace with your actual public key from EmailJS
+  })();
+
+  // Handle form submission
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault(); // prevent default form submission
+
+    emailjs.sendForm("service_6edapyy", "template_dn6c7of", this)
+      .then(function(response) {
+        alert("Message sent successfully!");
+        document.getElementById("contact-form").reset();
+      }, function(error) {
+        alert("Failed to send message: " + JSON.stringify(error));
+      });
+  });
