@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    
 </head>
 <body>
     <!-- The intro -->
@@ -256,11 +257,6 @@
                 <h1 class="text-3xl font-bold">Experience</h1>
                 <hr class="mt-5 border-gray-700">
                 
-                <div class="mt-5">
-                    <p>I started my frontend development journey with a passion for design and interactivity, learning HTML, CSS, and JavaScript before diving into frameworks like React and Next.js. I’ve built responsive web apps and interfaces, constantly improving through real-world practice.</p>
-                    <p class="mt-4">Hackathons have been a major part of my growth. These experiences taught me rapid prototyping, team collaboration, and agile development.
-                    Beyond hackathons, I’ve contributed to open-source projects, explored UI/UX design, and stayed curious—always building, learning, and iterating.</p>
-                </div>
                 <div>
                 <div class="flex mt-8 items-center">
                     <i class="fas fa-code text-yellow-500 border-2 border-gray-700 rounded shadow-black shadow-2xl p-2"></i>
@@ -281,6 +277,31 @@
                         
                     </div>
                 </div>
+                <div class="flex mt-8 items-center">
+                    <i class="fas fa-newspaper text-yellow-500 border-2 border-gray-700 rounded shadow-black shadow-2xl p-2"></i>
+                    <h1 class="text-2xl font-bold ml-3">Certifications</h1>
+                </div>
+                <div class="relative mt-5">
+                <!-- Vertical line -->
+                    <div class="absolute left-[21px] top-0 w-0.5 h-full bg-gray-700"></div>
+                    <!-- Certificates -->
+                <div class="ml-12 space-y-8">
+                    <div>
+                        <a href="https://drive.google.com/file/d/1c3unGcxrQ1WZs980YWBf3JgzpkFxVt72/view?usp=sharing" target="_blank">
+                    <h2 class="text-xl mt-5">Data Structures and Algorithm of 72 hours in C++<span class="text-lg ml-2 text-gray-400 ">(Link)</span></h2>
+                    <p class="text-gray-400">December, 2024</p>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1LZLHvoj00eJYJcqwdLAWkn0j6DGZFwLR/view?usp=sharing" target="_blank">
+                    <h2 class="text-xl mt-5">Object Oriented Programming of 72 hours in C++ <span class="text-lg ml-2 text-gray-400 ">(Link)</span></h2>
+                    <p class="text-gray-400">October,2024</p>
+                    </a>
+                    <a href="https://learn.deeplearning.ai/accomplishments/81bedcf5-f85c-49ad-9d57-e84f711db4e9?usp=sharing" target="_blank">
+                    <h2 class="text-xl mt-5">Prompt Engineering for AI Tools <span class="text-lg ml-2 text-gray-400 ">(Link)</span></h2>
+                    <p class="text-gray-400">May,2025</p>
+                    </a>
+                    </div>
+                </div>
+                </div>
                 </div>
 
             </div>
@@ -292,27 +313,38 @@
                 
                 <div class="mt-10 flex gap-12 mb-16">
                     <div class="flex-1">
-                        <form class="max-w-lg">
-                            <div class="mb-6">
-                                <label for="name" class="block mb-2 text-sm font-medium">Your Name</label>
-                                <input type="text" id="name" class="bg-gray-800 border border-gray-700 text-white text-sm rounded-lg block w-full p-2.5 focus:ring-blue-500 focus:border-blue-500" placeholder="Full Name" required>
-                            </div>
-                            <div class="mb-6">
-                                <label for="email" class="block mb-2 text-sm font-medium">Your Email</label>
-                                <input type="email" id="email" class="bg-gray-800 border border-gray-700 text-white text-sm rounded-lg block w-full p-2.5 focus:ring-blue-500 focus:border-blue-500" placeholder="name@example.com" required>
-                            </div>
-                            <div class="mb-6">
-                                <label for="subject" class="block mb-2 text-sm font-medium">Subject</label>
-                                <input type="text" id="subject" class="bg-gray-800 border border-gray-700 text-white text-sm rounded-lg block w-full p-2.5 focus:ring-blue-500 focus:border-blue-500" placeholder="Let me know how I can help you" required>
-                            </div>
-                            <div class="mb-6">
-                                <label for="message" class="block mb-2 text-sm font-medium">Your Message</label>
-                                <textarea id="message" rows="4" class="bg-gray-800 border border-gray-700 text-white text-sm rounded-lg block w-full p-2.5 focus:ring-blue-500 focus:border-blue-500" placeholder="Your message..."></textarea>
-                            </div>
+                        <form class="max-w-lg" id="contact-form">
+  <div class="mb-6">
+    <label for="name" class="block mb-2 text-sm font-medium">Your Name</label>
+    <input type="text" id="name" name="name"
+      class="bg-gray-800 border border-gray-700 text-white text-sm rounded-lg block w-full p-2.5 focus:ring-blue-500 focus:border-blue-500"
+      placeholder="Full Name" required>
+  </div>
+  <div class="mb-6">
+    <label for="email" class="block mb-2 text-sm font-medium">Your Email</label>
+    <input type="email" id="email" name="email"
+      class="bg-gray-800 border border-gray-700 text-white text-sm rounded-lg block w-full p-2.5 focus:ring-blue-500 focus:border-blue-500"
+      placeholder="name@example.com" required>
+  </div>
+  <div class="mb-6">
+    <label for="subject" class="block mb-2 text-sm font-medium">Subject</label>
+    <input type="text" id="subject" name="title"
+      class="bg-gray-800 border border-gray-700 text-white text-sm rounded-lg block w-full p-2.5 focus:ring-blue-500 focus:border-blue-500"
+      placeholder="Let me know how I can help you" required>
+  </div>
+  <div class="mb-6">
+    <label for="message" class="block mb-2 text-sm font-medium">Your Message</label>
+    <textarea id="message" name="message" rows="4"
+      class="bg-gray-800 border border-gray-700 text-white text-sm rounded-lg block w-full p-2.5 focus:ring-blue-500 focus:border-blue-500"
+      placeholder="Your message..." required></textarea>
+  </div>
 
-                            <button type="submit" class="text-gray-900 bg-yellow-500 hover:bg-yellow-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                                <i class="fas fa-paper-plane mr-3 "></i>Send Message</button>
-                        </form>
+  <button type="submit"
+    class="text-gray-900 bg-yellow-500 hover:bg-yellow-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+    <i class="fas fa-paper-plane mr-3 "></i>Send Message
+  </button>
+</form>
+                        
                     </div>
 
                     <div class="flex-1">
@@ -351,7 +383,7 @@
     </div>
 </div>
 
-
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script src="index.js"></script>
 </body>
 </html>
